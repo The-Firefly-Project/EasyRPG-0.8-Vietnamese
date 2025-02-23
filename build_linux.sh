@@ -13,9 +13,8 @@ export 'CC=ccache gcc -static-libgcc -static-libstdc++'
 export 'CXX=ccache g++ -static-libgcc -static-libstdc++'
 export 'CXXFLAGS=-Wall -Wextra -O0 -g3 -pipe -flto -ffunction-sections -fdata-sections'
 export LDFLAGS=-Wl,-O1,--sort-common,--as-needed,--gc-sections,-flto,-z,relro,-z,now
-export VER='(CI, $(date +%Y-%m-%d))'
 autoreconf -fi
-./configure --prefix=$PREFIX --enable-fmmidi '--enable-append-version=$VER' bashcompinstdir=etc/completion.d
+./configure --prefix=$PREFIX --enable-fmmidi "--enable-append-version=(CI, $(date +%Y-%m-%d))" bashcompinstdir=etc/completion.d
 make clean
 make check -j12
 make install
