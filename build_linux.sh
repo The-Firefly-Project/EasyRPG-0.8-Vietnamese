@@ -16,7 +16,7 @@ export LDFLAGS=-Wl,-O1,--sort-common,--as-needed,--gc-sections,-flto,-z,relro,-z
 autoreconf -fi
 ./configure --prefix=$PREFIX --enable-fmmidi "--enable-append-version=(CI, $(date +%Y-%m-%d))" bashcompinstdir=etc/completion.d
 make clean
-make check -j12
+make check -j$(nproc)
 make install
 make dist
 cd $PREFIX
