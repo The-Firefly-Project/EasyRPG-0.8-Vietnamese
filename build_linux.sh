@@ -19,7 +19,7 @@ make clean
 make check -j12
 make install
 make dist
-cd ~/EasyRPG/player-linux
+cd $PREFIX
 cp -up bin/easyrpg-player easyrpg-player
 objcopy --only-keep-debug easyrpg-player easyrpg-player.debug
 strip --strip-debug --strip-unneeded easyrpg-player
