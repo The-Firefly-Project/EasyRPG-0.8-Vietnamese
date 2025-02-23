@@ -1,3 +1,17 @@
+# EasyRPG-0.8-Vietnamese
+
+This is the modified version of EasyRPG 0.8 version, to give a better support for Vietnamese translated games, derived from [Serena1432/EasyRPGPlayer-Vietnamese](https://github.com/Serena1432/EasyRPGPlayer-Vietnamese) (the 0.7 version one). We don't know exactly what we've modified, so we uploaded our independent version here instead of a fork.
+
+To get more information about this modification, please refer to [Serena1432's instructions](https://github.com/Serena1432/EasyRPGPlayer-Vietnamese/blob/master/README.md) and [the original instructions](https://github.com/EasyRPG/Player/blob/master/README.md).
+
+## Required toolchain
+
+To get the best stability, use this [old buildscripts](https://github.com/Serena1432/EasyRPG-0.8-toolchain) from when the 0.8 version was released instead of the current one.
+
+## Building for iOS
+
+In 2023, Serena1432 has tested building EasyRPG for iOS and it was a success, although only the libretro version was built, and `build_libretro_ios.sh` is a part of the iOS buildscripts. However it required [another specific toolchain](https://github.com/Serena1432/buildscripts), and it also wasn't very well-documented. If you find an error, you have to fix it yourself.
+
 # EasyRPG Player
 
 EasyRPG Player is a game interpreter to play RPG Maker 2000, 2003 and EasyRPG
