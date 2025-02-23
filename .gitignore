@@ -93,7 +93,6 @@ Testing/
 
 # distribution archives
 easyrpg-player-*.tar.*
-*.zip
 
 # macos
 __MACOSX
