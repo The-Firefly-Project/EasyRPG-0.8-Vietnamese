@@ -5,6 +5,7 @@
 # export TOOLCHAIN_PATH=
 # export PREFIX=
 
+cd ..
 export 'PKG_CONFIG=pkg-config --static'
 export STATICLIBSPATH=$TOOLCHAIN_PATH
 export PKG_CONFIG_PATH=$TOOLCHAIN_PATH/lib/pkgconfig:$LIBLCF_PATH/lib/pkgconfig
